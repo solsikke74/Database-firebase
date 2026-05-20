@@ -8,11 +8,43 @@
 </head>
 <body>
     <header>
-        <img src="Images/logo.png" alt="Logo for Hakadalen hagesenter" width="100">
+        <img src="Images/Logo.png" alt="Logo for Hakadalen hagesenter" width="100">
         <h1>Hakadalen hagesenter</h1>
     </header>
-<h1>Hakadalen gartneri</h1>
-<p>Hakdalande gartneri er et familiedrift som har eksistert i over 50 år. Vi er spesialisert på å tilby høykvalitets planter og jordbruksservice til våre kunder.</p>
 
+     <ul class="topnav">
+        <li><a href="#">Uteplanter</a></li>
+        <li><a href="#">Inneplanter</a></li>
+        <li><a href="#">Tilbehør</a></li>
+        <li><a href="#">Interiør</a></li>
+        <li><a href="KontaktOss.html">Kontakt oss</a></li>
+        <li><a href="#">Hjem</a></li>
+    </ul>
+
+    <main>
+
+    <h2>Bruk skjemaet under for å kontakte oss</h2>
+
+
+        <form action="/action_page.php">
+        <label for="fname">Fornavn</label>
+        <input type="text" id="fname" name="firstname" placeholder="Ditt navn..">
+
+        <label for="lname">Etternavn</label>
+        <input type="text" id="lname" name="lastname" placeholder="Ditt etternavn..">
+        <label for="country">Tema</label>
+        <select id="tema" name="tema">
+            <option value="Uteplanter">Uteplanter</option>
+            <option value="Inneplanter">Inneplanter</option>
+            <option value="Tilbehør">Tilbehør</option>
+            <option value="Interiør">Interiør</option>
+        </select>
+        <label for="Melding">Melding</label>
+        <input type="text" id="Melding" name="melding" placeholder="Din melding..">
+
+        <input type="submit" value="Submit">
+
+        </form>
+    </main>
 </body>
 </html>

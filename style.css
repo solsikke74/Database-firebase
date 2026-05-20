@@ -1,0 +1,88 @@
+:root {
+  /* CSS RGB */
+  --stormy-teal: rgba(0, 109, 119, 1);
+  --pearl-aqua: rgba(131, 197, 190, 1);
+  --alice-blue: rgba(237, 246, 249, 1);
+  --almond-silk: rgba(255, 221, 210, 1);
+  --tangerine-dream: rgba(226, 149, 120, 1);
+}
+
+
+body {
+  background-color: rgba(237, 246, 249, 1);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  color: rgba(131, 197, 190, 1);
+}
+
+header {
+  background-color: rgba(0, 109, 119, 1);
+  padding: 10px;
+  text-align: center;
+  display: flex; /* Elementene ligger ved siden av hverandre */
+  align-items: center; /* Vertikal sentrering */
+  gap: 1.5rem; /* juster etter behov */
+} 
+
+
+header h1 {
+  margin: 0 auto; /* margin: 0 auto; gir automatisk like mye luft på venstre og høyre side
+            skyver h1 til midten av headeren. Logoen forblir til venstre*/
+}
+
+/* Style the topnav */
+ul.topnav {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 109, 119, 1);
+}
+
+/* Style links in topnav */
+ul.topnav li a {
+  display: block;
+  color: rgba(131, 197, 190, 1);
+  padding: 16px 50px; 
+  text-decoration: none;
+}
+
+/* Change color on hover */
+ul.topnav li a:hover {
+  background-color: rgba(131, 197, 190, 1);
+  color: rgba(237, 246, 249, 1);
+}
+
+main {
+  background-color: rgba(237, 246, 249, 1);
+  font-family: 'Arial', sans-serif;
+  margin: 20px;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgba(0, 109, 119, 1); 
+  font-family: 'Arial', sans-serif;
+  padding: 16px 50px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+
+footer a {
+  color: rgba(131, 197, 190, 1);
+  text-decoration: none;
+  padding: 16px;
+}
+
+footer a:hover {
+  background-color: rgba(131, 197, 190, 1);
+  color:rgba(0, 109, 119, 1)
+}

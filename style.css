@@ -41,13 +41,14 @@ ul.topnav {
   margin: 0;
   padding: 0;
   background-color: rgba(0, 109, 119, 1);
+  align-items: center;
 }
 
 /* Style links in topnav */
 ul.topnav li a {
   display: block;
   color: rgba(131, 197, 190, 1);
-  padding: 16px 50px; 
+  padding: 12px 16px; 
   text-decoration: none;
 }
 
@@ -58,14 +59,16 @@ ul.topnav li a:hover {
 }
 
 main {
+  display: flex;
+  flex-direction: column;   /* viktig */
+  align-items: center;
+  margin-left: 0;           /* fjern fast margin */
   background-color: rgba(237, 246, 249, 1);
   font-family: 'Arial', sans-serif;
-  margin: 20px;
 }
 
-h2 {
+main h2 {
   color: rgba(0, 109, 119, 1);
-  margin: 40px;
 }
 
 form {
@@ -75,9 +78,15 @@ form {
   background-color: rgba(226, 149, 120, 0.6);
   padding: 20px;
   color:  rgba(0, 109, 119, 1);
-  margin: 40px;
+  margin-left: 40px;
   box-shadow: 0 8px 20px rgba(0,0,0,0.15);
 }
+
+
+.form-group { /* Legg til en klasse for form-gruppering */
+  margin-bottom: 20px;
+}
+
 
 label {display: block;}
 
@@ -115,6 +124,12 @@ textarea {
   border-radius: 4px;
   box-sizing: border-box; 
 }
+
+/* Responsive layout - when the screen is less than 700px wide, everything stacks */
+@media screen and (max-width: 700px) {
+  ul.topnav {   
+    flex-direction: column;
+  }
 
 /* Style the footer */
 footer {

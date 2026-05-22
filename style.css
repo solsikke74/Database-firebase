@@ -131,6 +131,20 @@ textarea {
     flex-direction: column;
   }
 
+  ul.topnav li {
+    width: 100%;
+  } 
+
+    ul.topnav li a {
+    border: 1px solid rgba(237, 246, 249, 1); /* kant rundt hvert element */
+    margin: 8px 0;              /* luft mellom elementene */
+    border-radius: 6px;         /* runde hjørner */
+    width: 100%;              /* ta opp hele bredden */
+    text-align: center;        /* sentrere teksten */
+    }
+
+  }
+
 /* Style the footer */
 footer {
   background-color: rgba(0, 109, 119, 1); 
